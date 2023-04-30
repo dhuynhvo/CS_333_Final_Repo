@@ -47,3 +47,5 @@ jobs:
     environment: deployment
     steps:
       - name: deploy
+        run: |
+          echo "This is painful"
