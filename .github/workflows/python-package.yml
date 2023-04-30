@@ -40,3 +40,11 @@ jobs:
       run: |
         Coverage run UnitTest.py IntegrationTest.py
         Coverage report
+  
+  deployment:
+    runs-on: ubuntu-latest
+    environment: 
+      name: CS 333 Deployment Env
+      url: https://github.com
+    steps:
+      - name: deploy
