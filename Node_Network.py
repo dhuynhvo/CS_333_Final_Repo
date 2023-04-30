@@ -18,6 +18,7 @@ class Tree:
     def combineLists(self, listOfEdge, listOfDistance):
         for i in range(0, len(listOfEdge)):
             self.combinedList[i] = [listOfEdge[i], listOfDistance[i]]
+            
 
     
 
