@@ -42,9 +42,8 @@ jobs:
         Coverage report
   
   deployment:
+    needs: build
     runs-on: ubuntu-latest
-    environment: 
-      name: CS 333 Deployment Env
-      url: https://github.com
+    environment: deployment
     steps:
       - name: deploy
