@@ -1,7 +1,5 @@
-import pandas as pd
 import networkx as nx
 import random as rd
-from matplotlib import pyplot as plt
 
 class Packet:
     def __init__(self, routerID, edgeID = [-1,-1], edgeD = 0): # for the edge ID, left is start and right is end respective to victim router
