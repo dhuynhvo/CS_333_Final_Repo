@@ -40,15 +40,3 @@ jobs:
       run: |
         Coverage run UnitTest.py IntegrationTest.py
         Coverage report
-
-  
-  deployment:
-    needs: [build]
-    runs-on: ubuntu-latest
-    environment: deployment
-    steps:
-      - name: deploy
-        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
