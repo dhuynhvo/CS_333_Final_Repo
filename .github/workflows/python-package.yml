@@ -43,10 +43,12 @@ jobs:
 
   
   deployment:
-    needs: build
+    needs: [build]
     runs-on: windows-latest
     environment: deployment
     steps:
       - name: deploy
-        run: |
-          echo "This is painful"
+        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
