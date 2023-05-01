@@ -40,3 +40,13 @@ jobs:
       run: |
         Coverage run UnitTest.py IntegrationTest.py
         Coverage report
+
+  
+  deployment:
+    needs: build
+    runs-on: windows-latest
+    environment: deployment
+    steps:
+      - name: deploy
+        run: |
+          echo "This is painful"
