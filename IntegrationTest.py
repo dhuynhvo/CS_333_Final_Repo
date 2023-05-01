@@ -5,7 +5,7 @@ class IntegrationTestNodeNetwork(unittest.TestCase):
 
     totalPacketsSent = 0
 
-    def testSendNodePackets(self):
+    def testSendNodePacketsIntegration(self):
         testRange = 3000
         totalPacketsSent = 0
         for i in range(0,testRange):
@@ -21,7 +21,7 @@ class IntegrationTestNodeNetwork(unittest.TestCase):
 
         return
     
-    def testSendEdgePackets(self):
+    def testSendEdgePacketsIntegration(self):
         testRange = 3000
         totalPacketsSent = 0
 
@@ -38,7 +38,7 @@ class IntegrationTestNodeNetwork(unittest.TestCase):
 
         return
 
-    def testNodeSamplingFunctions(self):
+    def testNodeSamplingIntegration(self):
         testRange = 3000
         totalPacketsSent = 0
         for i in range(0,testRange):
@@ -56,7 +56,7 @@ class IntegrationTestNodeNetwork(unittest.TestCase):
 
         return
     
-    def testEdgeSamplingFunctions(self):
+    def testEdgeSamplingIntegration(self):
         testRange = 3000
         totalPacketsSent = 0
 
@@ -75,7 +75,7 @@ class IntegrationTestNodeNetwork(unittest.TestCase):
 
         return
     
-    def testNodeCountAndEdgeCountFunctions(self):
+    def testNodeCountAndEdgeCountIntegration(self):
         testRange = 3000
         totalPacketsSent = 0
 
