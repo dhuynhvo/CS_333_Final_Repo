@@ -46,6 +46,7 @@ class UnitTestNodeNetwork(unittest.TestCase):
         print(mls, "Most Likely Suspect: Edge")
         if mls is None:
             self.assertTrue(1 == 1)
+            
         return
     
     
