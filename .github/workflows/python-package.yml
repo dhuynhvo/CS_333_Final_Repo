@@ -38,5 +38,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with coverage.py
       run: |
-        Coverage run UnitTest.py IntegrationTest.py
+        Coverage run UnitTest.py
+        Coverage report
+        Coverage run IntegrationTest.py
         Coverage report
