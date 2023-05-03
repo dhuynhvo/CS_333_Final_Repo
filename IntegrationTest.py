@@ -89,6 +89,7 @@ class IntegrationTestNodeNetwork(unittest.TestCase):
 
         if(Node_Network.G.nodes[20]['markCount'][19] > 0 and Node_Network.G.nodes[20]['edgeList'][19].count((19,20)) > 20):
             pass
+        
 
 if __name__ == '__main__':
 	unittest.main()
