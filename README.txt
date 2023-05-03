@@ -2,6 +2,8 @@ Dan Huynhvo
 E .Keith
 5/2/2023
 
+Note: There is another pdf file that goes over the documentation of unit testing and rubric
+
 Technology Used:
 
 GitHub/GitHub Desktop for Source Control and Central Repo
